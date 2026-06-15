@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Rewardly — Earn Rewards</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -28,12 +30,15 @@ background:
 radial-gradient(circle at top,#25185e,#0A071E);
 
 color:white;
+
 }
 
 .container{
+
 max-width:1200px;
 margin:auto;
 padding:20px;
+
 }
 
 nav{
@@ -43,6 +48,7 @@ justify-content:space-between;
 align-items:center;
 
 padding:25px 0;
+
 }
 
 .logo{
@@ -50,11 +56,13 @@ padding:25px 0;
 font-size:34px;
 font-weight:800;
 
-background:linear-gradient(90deg,#FFD700,#00FFFF);
+background:
+linear-gradient(90deg,#FFD700,#00FFFF);
 
 -webkit-background-clip:text;
 
 -webkit-text-fill-color:transparent;
+
 }
 
 .links a{
@@ -64,6 +72,7 @@ color:white;
 text-decoration:none;
 
 margin-left:30px;
+
 }
 
 .hero{
@@ -79,6 +88,7 @@ justify-content:center;
 align-items:center;
 
 text-align:center;
+
 }
 
 .hero h1{
@@ -88,11 +98,13 @@ font-size:64px;
 line-height:1.1;
 
 max-width:900px;
+
 }
 
 .hero span{
 
 color:#FFD700;
+
 }
 
 .hero p{
@@ -104,6 +116,7 @@ max-width:700px;
 font-size:20px;
 
 opacity:.8;
+
 }
 
 .buttons{
@@ -115,6 +128,7 @@ display:flex;
 gap:20px;
 
 flex-wrap:wrap;
+
 }
 
 .btn{
@@ -128,13 +142,16 @@ text-decoration:none;
 font-weight:700;
 
 transition:.3s;
+
 }
 
 .primary{
 
-background:linear-gradient(90deg,#FFD700,#F39C12);
+background:
+linear-gradient(90deg,#FFD700,#F39C12);
 
 color:black;
+
 }
 
 .secondary{
@@ -146,23 +163,24 @@ backdrop-filter:blur(20px);
 border:1px solid rgba(255,255,255,.1);
 
 color:white;
+
 }
 
 .btn:hover{
 
 transform:translateY(-4px);
+
 }
 
 .phone{
 
 margin-top:60px;
 
-width:280px;
+width:300px;
 
-height:560px;
+height:600px;
 
 background:
-
 linear-gradient(
 180deg,
 #18142d,
@@ -174,7 +192,6 @@ border-radius:40px;
 padding:18px;
 
 box-shadow:
-
 0 0 80px rgba(255,215,0,.2);
 
 }
@@ -183,37 +200,50 @@ box-shadow:
 
 height:100%;
 
+overflow:hidden;
+
 border-radius:30px;
 
-padding:30px;
+background:#120d34;
+
+}
+
+.gallery{
 
 display:flex;
 
-flex-direction:column;
+overflow-x:auto;
 
-justify-content:center;
+height:100%;
 
-align-items:center;
+scroll-snap-type:x mandatory;
 
-background:
+scroll-behavior:smooth;
 
-linear-gradient(
-180deg,
-#25185e,
-#120d34
-);
 }
 
-.points{
+.gallery::-webkit-scrollbar{
 
-font-size:48px;
+display:none;
 
-color:#FFD700;
+}
+
+.gallery img{
+
+min-width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+scroll-snap-align:start;
+
 }
 
 section{
 
 padding:100px 0;
+
 }
 
 .title{
@@ -223,6 +253,7 @@ font-size:44px;
 margin-bottom:50px;
 
 text-align:center;
+
 }
 
 .grid{
@@ -230,25 +261,23 @@ text-align:center;
 display:grid;
 
 grid-template-columns:
-
 repeat(
 auto-fit,
 minmax(260px,1fr)
 );
 
 gap:25px;
+
 }
 
 .card{
 
 background:
-
 rgba(255,255,255,.06);
 
 backdrop-filter:blur(18px);
 
 border:
-
 1px solid rgba(255,255,255,.1);
 
 padding:35px;
@@ -256,13 +285,13 @@ padding:35px;
 border-radius:26px;
 
 transition:.3s;
+
 }
 
 .card:hover{
 
-transform:
+transform:translateY(-10px);
 
-translateY(-10px);
 }
 
 .card h3{
@@ -270,11 +299,13 @@ translateY(-10px);
 margin-bottom:15px;
 
 color:#FFD700;
+
 }
 
 .contact{
 
 text-align:center;
+
 }
 
 .contact a{
@@ -282,6 +313,7 @@ text-align:center;
 color:#FFD700;
 
 text-decoration:none;
+
 }
 
 footer{
@@ -293,17 +325,16 @@ padding:40px;
 text-align:center;
 
 border-top:
-
 1px solid rgba(255,255,255,.1);
+
 }
 
 footer a{
 
 color:#FFD700;
 
-margin:0 10px;
-
 text-decoration:none;
+
 }
 
 @media(max-width:700px){
@@ -311,6 +342,15 @@ text-decoration:none;
 .hero h1{
 
 font-size:42px;
+
+}
+
+.phone{
+
+width:260px;
+
+height:520px;
+
 }
 
 }
@@ -352,9 +392,7 @@ Support
 <h1>
 
 Earn Amazing
-<span>
-Rewards
-</span>
+<span>Rewards</span>
 
 Everyday
 
@@ -373,13 +411,12 @@ class="btn primary"
 href="https://play.google.com/store/apps/details?id=com.rewardlyapp"
 target="_blank">
 
-Download Android
+📲 Download Android
 
 </a>
 
 <a
-class="btn secondary"
-href="#">
+class="btn secondary">
 
 iOS Coming Soon
 
@@ -391,23 +428,19 @@ iOS Coming Soon
 
 <div class="screen">
 
-<div>
+<div class="gallery">
 
-Total Points
+<img src="./images/image1.jpeg">
+
+<img src="./images/image2.jpeg">
+
+<img src="./images/image3.jpeg">
+
+<img src="./images/image4.jpeg">
+
+<img src="./images/image5.jpeg">
 
 </div>
-
-<div class="points">
-
-12,450
-
-</div>
-
-<p>
-
-Keep earning and redeem anytime.
-
-</p>
 
 </div>
 
@@ -418,75 +451,29 @@ Keep earning and redeem anytime.
 <section id="features">
 
 <div class="title">
-
 Features
-
 </div>
 
 <div class="grid">
 
 <div class="card">
-
-<h3>
-
-🎁 Earn Rewards
-
-</h3>
-
-<p>
-
-Complete tasks and earn points.
-
-</p>
-
+<h3>🎁 Earn Rewards</h3>
+<p>Complete tasks and earn points.</p>
 </div>
 
 <div class="card">
-
-<h3>
-
-🔥 Daily Check-In
-
-</h3>
-
-<p>
-
-Return daily and unlock bonuses.
-
-</p>
-
+<h3>🔥 Daily Check-In</h3>
+<p>Return daily and unlock bonuses.</p>
 </div>
 
 <div class="card">
-
-<h3>
-
-👥 Refer Friends
-
-</h3>
-
-<p>
-
-Invite users and get bonus rewards.
-
-</p>
-
+<h3>👥 Refer Friends</h3>
+<p>Invite users and get bonus rewards.</p>
 </div>
 
 <div class="card">
-
-<h3>
-
-💰 Withdraw Rewards
-
-</h3>
-
-<p>
-
-Redeem eligible rewards quickly.
-
-</p>
-
+<h3>💰 Withdraw Rewards</h3>
+<p>Redeem eligible rewards quickly.</p>
 </div>
 
 </div>
@@ -496,29 +483,21 @@ Redeem eligible rewards quickly.
 <section id="works">
 
 <div class="title">
-
 How It Works
-
 </div>
 
 <div class="grid">
 
 <div class="card">
-
-1️⃣ Sign in
-
+1️⃣ Sign In
 </div>
 
 <div class="card">
-
 2️⃣ Earn Points
-
 </div>
 
 <div class="card">
-
 3️⃣ Redeem Rewards
-
 </div>
 
 </div>
@@ -530,15 +509,11 @@ class="contact"
 id="support">
 
 <div class="title">
-
 Support
-
 </div>
 
 <p>
-
 Need help?
-
 </p>
 
 <br>
@@ -557,7 +532,9 @@ rewardlyappsupport@gmail.com
 
 <br><br>
 
-<a href="https://patidarap.github.io/rewardly-privacy-policy/" target="_blank">
+<a
+href="https://patidarap.github.io/rewardly-privacy-policy/"
+target="_blank">
 
 Privacy Policy
 
@@ -568,4 +545,5 @@ Privacy Policy
 </div>
 
 </body>
+
 </html>
