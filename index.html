@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Rewardly — Earn Rewards</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+radial-gradient(circle at top,#25185e,#0A071E);
+
+color:white;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 0;
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+
+background:linear-gradient(90deg,#FFD700,#00FFFF);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+}
+
+.links a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:30px;
+}
+
+.hero{
+
+min-height:85vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+}
+
+.hero h1{
+
+font-size:64px;
+
+line-height:1.1;
+
+max-width:900px;
+}
+
+.hero span{
+
+color:#FFD700;
+}
+
+.hero p{
+
+margin-top:20px;
+
+max-width:700px;
+
+font-size:20px;
+
+opacity:.8;
+}
+
+.buttons{
+
+margin-top:40px;
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+}
+
+.btn{
+
+padding:18px 36px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.3s;
+}
+
+.primary{
+
+background:linear-gradient(90deg,#FFD700,#F39C12);
+
+color:black;
+}
+
+.secondary{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.1);
+
+color:white;
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+}
+
+.phone{
+
+margin-top:60px;
+
+width:280px;
+
+height:560px;
+
+background:
+
+linear-gradient(
+180deg,
+#18142d,
+#0f0b25
+);
+
+border-radius:40px;
+
+padding:18px;
+
+box-shadow:
+
+0 0 80px rgba(255,215,0,.2);
+
+}
+
+.screen{
+
+height:100%;
+
+border-radius:30px;
+
+padding:30px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+
+linear-gradient(
+180deg,
+#25185e,
+#120d34
+);
+}
+
+.points{
+
+font-size:48px;
+
+color:#FFD700;
+}
+
+section{
+
+padding:100px 0;
+}
+
+.title{
+
+font-size:44px;
+
+margin-bottom:50px;
+
+text-align:center;
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(
+auto-fit,
+minmax(260px,1fr)
+);
+
+gap:25px;
+}
+
+.card{
+
+background:
+
+rgba(255,255,255,.06);
+
+backdrop-filter:blur(18px);
+
+border:
+
+1px solid rgba(255,255,255,.1);
+
+padding:35px;
+
+border-radius:26px;
+
+transition:.3s;
+}
+
+.card:hover{
+
+transform:
+
+translateY(-10px);
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#FFD700;
+}
+
+.contact{
+
+text-align:center;
+}
+
+.contact a{
+
+color:#FFD700;
+
+text-decoration:none;
+}
+
+footer{
+
+margin-top:80px;
+
+padding:40px;
+
+text-align:center;
+
+border-top:
+
+1px solid rgba(255,255,255,.1);
+}
+
+footer a{
+
+color:#FFD700;
+
+margin:0 10px;
+
+text-decoration:none;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+Rewardly
+</div>
+
+<div class="links">
+
+<a href="#features">
+Features
+</a>
+
+<a href="#works">
+How It Works
+</a>
+
+<a href="#support">
+Support
+</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>
+
+Earn Amazing
+<span>
+Rewards
+</span>
+
+Everyday
+
+</h1>
+
+<p>
+
+Watch ads, invite friends, complete activities and redeem exciting rewards directly from Rewardly.
+
+</p>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="#">
+
+Download Android
+
+</a>
+
+<a
+class="btn secondary"
+href="#">
+
+iOS Coming Soon
+
+</a>
+
+</div>
+
+<div class="phone">
+
+<div class="screen">
+
+<div>
+
+Total Points
+
+</div>
+
+<div class="points">
+
+12,450
+
+</div>
+
+<p>
+
+Keep earning and redeem anytime.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<div class="title">
+
+Features
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>
+
+🎁 Earn Rewards
+
+</h3>
+
+<p>
+
+Complete tasks and earn points.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+🔥 Daily Check-In
+
+</h3>
+
+<p>
+
+Return daily and unlock bonuses.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+👥 Refer Friends
+
+</h3>
+
+<p>
+
+Invite users and get bonus rewards.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+💰 Withdraw Rewards
+
+</h3>
+
+<p>
+
+Redeem eligible rewards quickly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="works">
+
+<div class="title">
+
+How It Works
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+1️⃣ Sign in
+
+</div>
+
+<div class="card">
+
+2️⃣ Earn Points
+
+</div>
+
+<div class="card">
+
+3️⃣ Redeem Rewards
+
+</div>
+
+</div>
+
+</section>
+
+<section
+class="contact"
+id="support">
+
+<div class="title">
+
+Support
+
+</div>
+
+<p>
+
+Need help?
+
+</p>
+
+<br>
+
+<a href="mailto:rewardlyappsupport@gmail.com">
+
+rewardlyappsupport@gmail.com
+
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Rewardly
+
+<br><br>
+
+<a href="privacy.html">
+
+Privacy Policy
+
+</a>
+
+|
+
+<a href="terms.html">
+
+Terms
+
+</a>
+
+</footer>
+
+</div>
+
+</body>
+</html>
